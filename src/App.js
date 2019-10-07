@@ -1,10 +1,12 @@
 import React from "react";
-import "./App.css";
+import Form from "./components/Form";
+import ControlledMultiple from "./components/ControlledMultiple.js";
 
 function App() {
   return (
     <div>
-      <p>Hello World </p>
+      <Form />
+      <ControlledMultiple />
     </div>
   );
 }
