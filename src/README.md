@@ -1,27 +1,10 @@
-# Fun With Forms
+# Summary of useState Hook
 
-In this activity we will add some new functionality to the previous form example.
-
-## Instructions
-
-* Replace your React application's `src` folder with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
-
-* Update the `Form` component to add the following:
-
-  1. A new input field that updates `this.state.password`. 
-  
-     * Set the initial value of `this.state.password` to an empty string.
-
-  2. Whenever a user clicks the "Submit" button, add code to accomplish the following:
-
-     1. If the user hasn't provided a first and last name, throw an alert saying: "Fill out your first and last name please!".
-
-     2. If the user has provided a first and last name, but their password is less than 6 characters, throw an alert saying, "Choose a more secure password," followed by the full name. E.g. "Choose a more secure password, John Smith!"
-
-     3. Else, throw an alert to greet the user. E.g. "Hello, John Smith!".
-  
-  3. Do not allow the user to type in a password that is longer than 15 characters. i.e. the length of the password state should never go beyond 15 characters.
-
-### Hints 
-
-* You may want to look into using [String.prototype.substring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring) to prevent the password field from going beyond 15 characters.
+React Hooks allow you to use React features without having to write class
+The useState Hook lets you add the state to functional components.
+In classes the state is always an Object
+with useState hook the state doesn't have to be an object
+The useState hook returns an array with 2 elements
+The first element is current value of the state, and the second element is state setter function.
+New state value is depends ont he previous state value ? yes we can pass a function to the setter function
+When dealing with objects or arrays,always make sure to spread your state variable and then call the setter function.

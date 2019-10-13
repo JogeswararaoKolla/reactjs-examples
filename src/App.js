@@ -1,14 +1,8 @@
 import React from "react";
-import Form from "./components/Form";
-import ControlledMultiple from "./components/ControlledMultiple.js";
+import HookPrevStateCounter from "./components/HookPrevStateCounter.js";
 
 function App() {
-  return (
-    <div>
-      <Form />
-      <ControlledMultiple />
-    </div>
-  );
+  return <HookPrevStateCounter />;
 }
 
 export default App;
