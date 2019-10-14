@@ -1,8 +1,12 @@
 import React from "react";
-import HookPrevStateCounter from "./components/HookPrevStateCounter.js";
+import ClassCounter from "./components/ClassCounter.js";
 
 function App() {
-  return <HookPrevStateCounter />;
+  return (
+    <div>
+      <ClassCounter />
+    </div>
+  );
 }
 
 export default App;

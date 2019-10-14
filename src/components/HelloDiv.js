@@ -10,6 +10,7 @@ function HelloDiv() {
         <li>Carrots</li>
         <li>Love</li>
       </ul>
+      <p>Hello World</p>
     </div>
   );
 }
