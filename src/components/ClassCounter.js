@@ -14,11 +14,15 @@ class ClassCounter extends Component {
     this.setState({ count: this.state.count + value });
   }
   decrementCount() {
+    // We always use the setState method to update a component's state
     this.setState({ count: this.state.count - 1 });
   }
+  // If we want a child component to update or pass data to its parent, we can create a method inside the parent for the update
+  // Then bind the method to the parent, and pass it to the child as a prop
   // Here we are using the bind on the incrementCount and decrementCount to change the context
   // from button event to these methods respectivley.
   // when you call a method with paramters we need to use to arrow funcitons like below.
+  // The render method returns the JSX that should be rendered
   render() {
     return (
       <div>

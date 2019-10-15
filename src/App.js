@@ -1,10 +1,10 @@
 import React from "react";
-import ClassCounter from "./components/ClassCounter.js";
+import ClassForm from "./components/ClassForm.js";
 
 function App() {
   return (
     <div>
-      <ClassCounter />
+      <ClassForm />
     </div>
   );
 }
