@@ -9,6 +9,17 @@ class ClassCounter extends Component {
     this.incrementCount = this.incrementCount.bind(this);
     this.decrementCount = this.decrementCount.bind(this);
   }
+  componentDidMount() {
+    document.title = `Clicked ${this.state.count} times`;
+  }
+  componentDidUpdate(prevProps, prevState) {
+    console.log(prevProps);
+    console.log(prevState);
+    if (prevState.count !== this.state.count) {
+      console.log("Updating the Document title");
+      document.title = `Clicked ${this.state.count} times`;
+    }
+  }
 
   incrementCount(value = 1) {
     this.setState({ count: this.state.count + value });

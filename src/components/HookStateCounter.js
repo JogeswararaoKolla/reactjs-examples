@@ -1,5 +1,5 @@
 //snippet rfce to create functional component
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 //steps needed for creating counter component
 //create a function component
 //state property to initialize with 0
@@ -17,6 +17,10 @@ function HookStateCounter() {
   //only call hooks from React functions
   //call them from within React functional components and not just a regular javascript functions
 
+  useEffect(() => {
+    document.title = `You clicked ${counter} times`;
+  });
+  //UseEffect runs after every render of the component
   return (
     <div className="container">
       <div className="row">

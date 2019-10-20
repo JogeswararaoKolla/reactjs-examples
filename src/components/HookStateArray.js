@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export function HookStateArray() {
   const [items, setItems] = useState([]);
   //Make a copy of array of items using spread operator
-  // and append an item to array by passing as element to the setItems function
+  //and append an item to array by passing as element to the setItems function
   const addItem = () => {
     setItems([
       ...items,

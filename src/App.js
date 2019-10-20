@@ -1,10 +1,10 @@
 import React from "react";
-import ClassForm from "./components/ClassForm.js";
+import DataFetching from "./components/DataFetching.js";
 
 function App() {
   return (
     <div>
-      <ClassForm />
+      <DataFetching />
     </div>
   );
 }
